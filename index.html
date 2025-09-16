@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratiza aí - Em Construção</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset and Basic Styles */
+        :root {
+            --primary-color: #F27A3C;
+            --dark-gray: #333333;
+            --light-gray: #f4f4f9;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Main content container with a card-like effect */
+        .container {
+            background: var(--white);
+            padding: 2.5rem 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            animation: fadeIn 1s ease-in-out;
+            border-top: 5px solid var(--primary-color); /* Adiciona uma borda laranja no topo */
+        }
+
+        /* Logo Styling */
+        .logo {
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+        
+        /* Heading Styles */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--primary-color); /* Altera a cor do título para o laranja principal */
+            margin-bottom: 0.5rem;
+        }
+
+        /* Paragraph Styles */
+        p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Footer Styles */
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9rem;
+            color: #888;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        /* Fade-in animation for a smooth load */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <!-- Your logo image. Make sure 'logo.png' is in the same folder as this file. -->
+        <img src="./src/img/logo.png" alt="Logo Contratiza aí" class="logo">
+        
+        <h1>Site em construção</h1>
+        <p>
+            Estamos trabalhando nos bastidores para criar uma plataforma incrível. 
+            Volte em breve para conferir as novidades!
+        </p>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Contratiza aí. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
